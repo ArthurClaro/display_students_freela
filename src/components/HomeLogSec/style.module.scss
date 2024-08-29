@@ -1,0 +1,121 @@
+.loginContainer{
+    display: flex;
+    width: 800px;
+    height: 420px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+
+    @media (max-width: 802px) {
+        height: 100%;
+        width: 100%;
+        padding: 21px;
+        background-color: transparent;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @media (max-width: 505px) {
+        padding: 11px;
+    }
+}
+
+.loginLeft {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    background-color: #b2e0d6;
+
+    img {
+        width: 250px;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+    @media (max-width: 802px) {
+        display: none;
+    }
+}
+
+.loginRight {
+    width: 50%;
+    padding: 40px;
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @media (max-width: 802px) {
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+    }
+
+    h1 {
+        margin-bottom: 25px;
+        font-size: 32px;
+        color: #00695c;
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+    }
+
+
+
+    label {
+        margin-bottom: 10px;
+        font-weight: bold;
+        color: #333;
+    }
+
+    input {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 20px;
+        text-align: justify;
+        margin-top: 7px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+    }
+
+
+    button {
+        width: 100%;
+        padding: 12px;
+        background-color: #009688;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        font-size: 18px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+        background-color: #00796b;
+    }
+
+    p {
+        margin-top: 20px;
+        text-align: center;
+        color: #555;
+    }
+
+    a {
+        color: #009688;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    div {
+        text-align: center;
+        margin-top: 20px;
+    }
+}

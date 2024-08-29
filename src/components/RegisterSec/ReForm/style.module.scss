@@ -1,0 +1,60 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 22px;
+    gap: 11px;
+    width: 100%;
+
+    label {
+        font-weight: bold;
+        color: #333;
+    }
+
+    input {
+        width: 100%;
+        padding: 12px;
+        text-align: justify;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        margin-bottom: 19px;
+    }
+
+    &>p {
+        color: var(--color-btnRosa);
+        font-family: var(--font-primary);
+        font-weight: 400;
+        font-size: 13px;
+        position: relative;
+        top: -15px;
+    }
+
+    select {
+        width: 100%;
+        padding: 12px;
+        text-align: justify;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        margin-bottom: 10px;
+    }
+
+    button {
+        background: #009688;
+        color: white;
+        border-radius: 10px;
+        height: 41px;
+        padding: 10px 82px;
+        transition: background-color 0.3s ease;
+        border: none;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #00796b;
+        border: 1px solid white;
+    }
+
+    @media (max-width:420px) {
+        width: 100%;
+        padding: 10px 10px;
+    }
+}
