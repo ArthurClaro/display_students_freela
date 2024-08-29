@@ -1,4 +1,3 @@
-
 .containerDash {
     display: flex;
     flex-direction: row;
@@ -322,6 +321,39 @@
                 display: flex;
                 flex-direction: row;
                 gap: 0px;
+            }
+
+            #pr_id_2_content {
+                box-shadow: none;
+                padding: 0;
+
+                &>div {
+                    box-shadow: none;
+                    margin-top: 10px;
+                    padding: 0;
+                }
+            }
+
+            .p-fieldset-legend.p-unselectable-text {
+                border: none;
+                a {
+                    border: none;
+                    gap: 10px;
+                }
+            }
+
+            .p-fieldset-toggleable {
+                border: none;
+            }
+
+            .textWhrite {
+                width: 100%;
+                padding: 12px;
+                text-align: justify;
+                border: 1px solid #ccc;
+                border-radius: 8px;
+                resize: vertical;
+                height: 400px;
             }
         }
 

@@ -17,6 +17,7 @@ import { Inplace, InplaceDisplay, InplaceContent } from 'primereact/inplace';
 import { DataTable } from 'primereact/datatable';
 import { Column } from 'primereact/column';
 import { ProductService } from '../../services/ProductService';
+import { Fieldset } from 'primereact/fieldset';
 
 
 function DashSec() {
@@ -288,6 +289,12 @@ function DashSec() {
                                 </p>
                             </AccordionTab>
                         </Accordion>
+                    </div>
+
+                    <div className="card">
+                        <Fieldset legend="Realizar Redação" toggleable collapsed={true} className="boxS">
+                            <textarea className="textWhrite" name="" id="" placeholder="Escreva aqui..."></textarea>
+                        </Fieldset>
                     </div>
 
                     <div className="card">
