@@ -355,6 +355,17 @@
                 resize: vertical;
                 height: 400px;
             }
+
+
+            .p-fileupload.p-fileupload-basic.p-component{
+                box-shadow: none;
+                &>div{
+                    display: none;
+                }
+                &>span{
+                    padding: 10px;
+                }
+            }
         }
 
     }

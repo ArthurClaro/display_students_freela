@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom"
-import { useEffect, useState } from "react"
+import { useEffect, useRef, useState } from "react"
 
 import logo from '../../assets/logo.png'
 import photo from '../../assets/userPhoto.png'
@@ -18,7 +18,8 @@ import { DataTable } from 'primereact/datatable';
 import { Column } from 'primereact/column';
 import { ProductService } from '../../services/ProductService';
 import { Fieldset } from 'primereact/fieldset';
-
+import { Toast } from 'primereact/toast';
+import { FileUpload } from 'primereact/fileupload';
 
 function DashSec() {
 
@@ -218,6 +219,12 @@ function DashSec() {
         setChartOptions3(options);
     }, []);
 
+    const toast = useRef(null);
+
+    const onUpload = () => {
+        toast.current.show({ severity: 'info', summary: 'Success', detail: 'File Uploaded' });
+    };
+
     // Lógica usando switch/case  ( 2/2 )
     const renderContent = () => {
         switch (activeScreen) {
@@ -295,6 +302,10 @@ function DashSec() {
                         <Fieldset legend="Realizar Redação" toggleable collapsed={true} className="boxS">
                             <textarea className="textWhrite" name="" id="" placeholder="Escreva aqui..."></textarea>
                         </Fieldset>
+                    </div>
+
+                    <div className="card flex justify-content-center">
+                        <FileUpload chooseLabel="Anexar" mode="basic" name="demo[]" url="/api/upload" accept="image/*" maxFileSize={1000000} onUpload={onUpload} />
                     </div>
 
                     <div className="card">
