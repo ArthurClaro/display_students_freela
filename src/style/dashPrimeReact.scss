@@ -336,6 +336,7 @@
 
             .p-fieldset-legend.p-unselectable-text {
                 border: none;
+
                 a {
                     border: none;
                     gap: 10px;
@@ -357,15 +358,33 @@
             }
 
 
-            .p-fileupload.p-fileupload-basic.p-component{
+            .p-fileupload.p-fileupload-basic.p-component {
                 box-shadow: none;
-                &>div{
+
+                &>div {
                     display: none;
                 }
-                &>span{
+
+                &>span {
                     padding: 10px;
                 }
             }
+
+            .p-button-label.p-c{
+                padding: 12px;
+            }
+
+            // .p-fileupload.p-fileupload-advanced.p-component {
+            //     box-shadow: none;
+
+            //     &>.p-fileupload-content {
+            //         box-shadow: none;
+
+            //         &>.p-progressbar.p-component.p-progressbar-determinate {
+            //             display: none;
+            //         }
+            //     }
+            // }
         }
 
     }
