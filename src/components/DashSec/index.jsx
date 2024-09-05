@@ -269,7 +269,7 @@ function DashSec() {
                 return <div >
                     <h2>● Minhas Redações</h2>
 
-                    {/* <div className="card ">
+                    <div className="card ">
                         <Accordion activeIndex={0} className="boxS">
                             <AccordionTab header="Redação / Algoritmo 01/08" className="boxS">
                                 <p className="m-0">
@@ -296,28 +296,28 @@ function DashSec() {
                                 </p>
                             </AccordionTab>
                         </Accordion>
-                    </div> */}
+                    </div>
 
-                    {/* <div className="card">
+                    <div className="card">
                         <Fieldset legend="Realizar Redação" toggleable collapsed={true} className="boxS">
                             <textarea className="textWhrite" name="" id="" placeholder="Escreva aqui..."></textarea>
                         </Fieldset>
-                    </div> */}
+                    </div>
 
 
                     <div className="card flex justify-content-center">
                         <FileUpload chooseLabel="Anexar" mode="basic" name="demo[]" url="/api/upload" accept="image/*" maxFileSize={1000000} onUpload={onUpload} />
 
-                        <Button label="Submit" icon="pi pi-check" iconPos="right" />
+                        {/* <Button label="Submit" icon="pi pi-check" iconPos="right" /> */}
                     </div>
 
-                    {/* 
-                    https://primereact.org/fileupload/
-                    <div className="card">
+                    {/* https://primereact.org/fileupload/ */}
+                    
+                    {/* <div className="card">
                         <FileUpload name="demo[]" url={'/api/upload'} multiple accept="image/*" maxFileSize={1000000} emptyTemplate={<p className="m-0">Drag and drop files to here to upload.</p>} />
                     </div> */}
 
-                    {/* <div className="card">
+                    <div className="card">
                         <BlockUI blocked={blocked} template={<i className="pi pi-lock" style={{ fontSize: '3rem' }}></i>}>
                             <p className="m-0 boxS">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -329,7 +329,7 @@ function DashSec() {
                             <h3>Aguarde a análise</h3>
                             <Button className="btnToggle" label={buttonText} onClick={() => setBlocked((oldState) => !oldState)}></Button>
                         </div>
-                    </div> */}
+                    </div>
 
                 </div>;
             case 'feedbacks':
